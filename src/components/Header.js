@@ -18,8 +18,8 @@ function Header() {
             </div>
           </div>
 
-          <div>
-            <div className="header-form flex col">
+          <div className="header-form flex col gap">
+            <div className="header-form-inner">
               <div>
                 <div>
                   <h2 class="elementor-heading-title ">
@@ -30,8 +30,8 @@ function Header() {
               <div>
                 <div>
                   <form>
-                    <div>
-                      <div>
+                    <div className="flex col ">
+                      <div >
                         <input placeholder="Full Name" />
                       </div>
                       <div>
