@@ -14,6 +14,7 @@ function FreightForwadingPage() {
       <ThredSection/>
       <ForthSection/> 
       <Testimonials/>
+    
       <Footer/>
     </div>
   );

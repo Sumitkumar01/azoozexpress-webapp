@@ -15,7 +15,7 @@ function ForthSection() {
                 </div>
               </div>
               <div>
-                <div className="elementor-widget-container">
+                <div className="elementor-widget-container description">
                   Ready for a freight forwarding experience that goes beyond
                   expectations? Contact Azzoz Express for professional cargo
                   services in Muscat.&nbsp;
@@ -25,7 +25,7 @@ function ForthSection() {
                 <div className="elementor-widget-container">
                   <div className="elementor-button-wrapper">
                     <Link
-                      className="elementor-button elementor-button-link elementor-size-xl"
+                      className="elementor-button "
                       to="https://azoozexpress.com/azooz-contact-page/"
                     >
                       <span className="">

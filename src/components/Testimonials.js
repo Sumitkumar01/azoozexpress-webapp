@@ -17,12 +17,12 @@ function Testimonials() {
               <section className="flex">
                 <div className="elementor-container ">
                   <div>
-                    <div className="elementor-widget-wrap" style={{ padding: "10px" }}>
+                    <div className="elementor-widget-wrap">
                       <div>
                         <div className="elementor-widget-container">
                           <div>
                             <div className="flex">
-                              <div className="p">
+                              <div className="">
                                 <figure className="swiper-slide-inner">
                                   <img
                                     decoding="async"
@@ -32,7 +32,7 @@ function Testimonials() {
                                   />
                                 </figure>
                               </div>
-                              <div className="p">
+                              <div className="">
                                 <figure className="swiper-slide-inner">
                                   <img
                                     decoding="async"
