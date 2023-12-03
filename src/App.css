@@ -294,6 +294,7 @@ img {
 
 .top-section-deteles-container .elementor-heading-title {
   color: #e01c2c;
+  text-align: center;
 }
 
 .top-section-outer .elementor-heading-title {
@@ -801,7 +802,7 @@ img {
   }
 
   .header-container-inner-left-inner {
-    padding: 0 0 0 2.5rem;
+    padding: 0 0 0 1.5rem;
   }
 
   .swiper-slide-inner img {
