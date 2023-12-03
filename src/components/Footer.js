@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const [hoveredItem, setHoveredItem] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHoveredItem(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredItem(false);
+  };
   return (
     <div className="footer center flex p">
       <div className=" footer-container flex">
@@ -215,7 +224,9 @@ function Footer() {
                           <div className="flex center">
                             <div className="footer-button-wrapper ">
                               <div className="footer-button-content-wrapper">
-                                <Link className="elementor-button-text">
+                                <Link className={`elementor-button-text ${hoveredItem ? 'button_hovered' : ''}`}
+                                  onMouseEnter={handleMouseEnter}
+                                  onMouseLeave={handleMouseLeave}>
                                   GET A QUOTE
                                 </Link>
                               </div>
@@ -230,52 +241,7 @@ function Footer() {
             </div>
           </div>
         </section>
-        {/* <section>
-          <div className="elementor-container elementor-column-gap-default">
-            <div>
-              <div className="elementor-widget-wrap elementor-element-populated">
-                <section>
-                  <div className="elementor-container elementor-column-gap-default">
-                    <div>
-                      <div className="elementor-widget-wrap elementor-element-populated">
-                        <div>
-                          <div className="">
-                            <p>Copyright © 2022 All Rights Reserved.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="elementor-widget-wrap elementor-element-populated">
-                        <div>
-                          <div className="">
-                            <p>
-                              <Link to="http://azoozexpress.com/privacy-policy/">
-                                Privacy Policy
-                              </Link>
-                              |
-                              <Link to="http://azoozexpress.com/terms-of-service/">
-                                Terms of Service
-                              </Link>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <div>
-                  <div className="">
-                    <p>
-                      Website Designed &amp; Developed By
-                      <Link to="https://www.fielmente.com/">Fielmente.com</Link>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
+        
       </div>
     </div>
   );
