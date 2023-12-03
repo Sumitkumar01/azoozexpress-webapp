@@ -4,6 +4,15 @@ import { Link } from "react-router-dom";
 function Navbar() {
   const [show, setShow] = useState(false);
   const [open, setOpen] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState(null);
+
+  const handleMouseHover_Enter = (index) => {
+    setHoveredItem(index);
+  };
+
+  const handleMouseHover_Leave = () => {
+    setHoveredItem(null);
+  };
   const handleMouseEnter = () => {
     setShow(true);
   };
@@ -11,7 +20,11 @@ function Navbar() {
     setShow(false);
   };
   const navClick = () => {
-    {!show ? setShow(true):setShow(false)}
+    if (!show) {
+      setShow(true)
+    } else {
+      setShow(false)
+    }
   }
   const handleclick = () => {
     if (!open) {
@@ -40,16 +53,24 @@ function Navbar() {
           <div className="p-1">
             <nav className="nav-p desktop-menu">
               <ul className="flex">
-                <li className="nav-item">
+                <li className={`nav-item ${hoveredItem === 0 ? 'hovered' : ''}`}
+                  onMouseEnter={() => handleMouseHover_Enter(0)}
+                  onMouseLeave={handleMouseHover_Leave}>
                   <Link to="#">Home</Link>
                 </li>
-                <li className="nav-item">
+                <li className={`nav-item ${hoveredItem === 1 ? 'hovered' : ''}`}
+                  onMouseEnter={() => handleMouseHover_Enter(1)}
+                  onMouseLeave={handleMouseHover_Leave}>
                   <Link to="#">About</Link>
                 </li>
-                <li className="nav-item">
+                <li className={`nav-item ${hoveredItem === 2 ? 'hovered' : ''}`}
+                  onMouseEnter={() => handleMouseHover_Enter(2)}
+                  onMouseLeave={handleMouseHover_Leave}>
                   <Link to="#">Contact</Link>
                 </li>
-                <li className="nav-item">
+                <li className={`nav-item ${hoveredItem === 3 ? 'hovered' : ''}`}
+                  onMouseEnter={() => handleMouseHover_Enter(3)}
+                  onMouseLeave={handleMouseHover_Leave}>
                   <Link
                     to="#"
                     onMouseEnter={handleMouseEnter}
