@@ -209,6 +209,7 @@ img {
   cursor: pointer;
   transition: border-bottom 0.3s ease-in-out;
 }
+
 .hovered {
   border-bottom: 6px solid #ecd014;
 }
@@ -489,15 +490,21 @@ img {
 }
 
 .elementor-icon-list-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   margin: 5px;
+  width: 1rem;
+  height: 1rem;
 }
 
 .elementor-icon-list-icon .icon {
-  width: 20px;
-  height: 20px;
-  display: block;
-  fill: #FFFFFF;
+  width: 1rem;
+  font-size: 16px;
+  color: #FFFFFF;
 }
+
+
 
 .elementor-icon-list-item {
   display: flex;
@@ -522,7 +529,7 @@ img {
   border-radius: 5px 20px 20px 20px;
 }
 
-.button_hovered:hover{
+.button_hovered:hover {
   background-color: #000000;
   border: 2px solid #D91F28;
 }
@@ -551,7 +558,8 @@ img {
   .nav-p {
     padding: 0;
   }
-  .gap{
+
+  .gap {
     gap: 2rem;
   }
 }
@@ -833,5 +841,5 @@ img {
   .swiper-slide-inner img {
     width: 355px;
   }
-  
+
 }

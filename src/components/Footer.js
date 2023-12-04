@@ -193,9 +193,7 @@ function Footer() {
                               </li>
                               <li className="elementor-icon-list-item">
                                 <span className="elementor-icon-list-icon">
-                                  <i
-                                    className="icon icon-email1"
-                                  ></i>
+                                  <i class="fa-solid fa-envelope-open-text fa-beat-fade icon"></i>
                                 </span>
                                 <span className="elementor-icon-list-text">
                                   info@azoozexpress.com
@@ -203,10 +201,7 @@ function Footer() {
                               </li>
                               <li className="elementor-icon-list-item">
                                 <span className="elementor-icon-list-icon">
-                                  <i
-                                    aria-hidden="true"
-                                    className="icon icon-phone-call1"
-                                  ></i>
+                                  <i class="fa-solid fa-phone-volume fa-shake icon"></i>
                                 </span>
                                 <span className="elementor-icon-list-text">
                                   +968 22700 070
